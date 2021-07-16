@@ -1,0 +1,251 @@
+*{
+	/*Arrumar a letra no cabeçalho*/
+	font-family:arial;
+	font-size:14px;
+}
+/*Estilo do menu*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.menu{
+	list-style:none; 
+	border:1px solid green; 
+	float:left;
+	margin-right:5px;
+	margin-left:5px;
+}
+
+.menu li{
+	position:relative; 
+	float:left; 
+	border-right:1px solid green; 
+}
+
+.menu li a{
+	color:black; 
+	text-decoration:none; 
+	padding:5px 10px; 
+	display:block;
+}
+
+.menu li a:hover{
+	background-color:green; 
+	color:white; 
+	text-shadow:0px 0px 5px black; 
+	transition:0.5s ease;
+	opacity:1;
+	z-index:5;
+	position:relative;
+}
+
+.menu li   ul{
+	position:absolute; 
+	top:25px; 
+	left:0; 
+	background-color:#fff; 
+	display:none; 
+}
+
+.menu li:hover ul, .menu li.over ul{
+	display:block;
+}
+
+.menu li ul li{
+	border:1px solid #c0c0c0; 
+	display:block; 
+	width:150px;
+}
+/*Estilo do menu*/
+
+input[type=submit] {
+	color:gray;
+	border-style:solid;
+	border-color:black;
+	border-radius:10px;
+	background-color:blue;
+	padding:3px;
+	border-width:1px;
+}
+input[type=submit]:hover {
+	cursor:pointer;
+	color:black;
+	background-color:white;
+	transition:1s ease;
+}	
+input[type=text] {
+	padding:5px;
+	border-left-style:solid;
+	color:black;
+	border-color:black;
+	width:250px;
+}
+input.Quantidade[type=text] {
+	padding:5px;
+	border-left-style:solid;
+	color:black;
+	border-color:black;
+	width:50px;
+}
+input[type=password] {
+	padding:5px;
+	border-left-style:solid;
+	color:black;
+	border-color:black;
+	width:250px;
+}	
+input[type=email] {
+	padding:5px;
+	border-left-style:solid;
+	color:black;
+	border-color:black;
+	width:250px;
+	border:10px;
+}
+input[type=number] {
+	padding:5px;
+	border-left-style:solid;
+	color:black;
+	border-color:black;
+	width:250px;
+}
+input[type=date] {
+	padding:3px;
+	border-left-style:solid;
+	color:black;
+	border-color:black;
+	width:250px;
+}
+input[type=datetime-local] {
+	padding:3px;
+	border-left-style:solid;
+	color:black;
+	border-color:black;
+	width:250px;
+}
+select{
+	padding:5px;
+	border-left-style:solid;
+	color:black;
+	border-color:black;
+	width:250px;
+}
+.input-wrapper label {
+background-color: lightgray;
+border-radius: 0px;
+color: black;
+margin: 0px;
+padding:5px;
+border:solid 1px;
+}
+  
+.input-wrapper label:hover {
+opacity:0.8;
+}
+  
+/* Chrome, Safari, Edge, Opera Tirar as setas dos input number*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+  
+  /* Firefox */
+input[type=number] {
+-moz-appearance:textfield;
+}
+div#div1{
+	z-index:6;
+	display:none;
+	position:fixed;
+	width:100%;
+	background-color:lightgray;
+	height:100%;
+	opacity:0.8;
+	align-items: center;
+	justify-content:center;
+}
+span#carregando{
+	opacity:1;
+	font-weight:bolder;
+	color:black;
+}
+.flex{
+	display:flex;
+	justify-content:center;
+}
+.botao{
+	border-radius:0px;
+	background-color:green;
+	border:solid 1px darkgreen;
+	font-weight:bolder;
+	color:black;
+	cursor:pointer;
+	padding-left:10px;
+	padding-right:10px;
+	color:white;
+	padding:5px;
+}
+table.novo{
+	border-collapse:collapse;
+	border:solid 1px gray;
+}
+td.titulo{
+	background-color:LightGoldenRodYellow;
+	padding:10px;
+	border:solid 1px gray;
+	font-weight:bolder;
+}
+td.tipoum{
+	padding:10px;
+	padding-bottom:2px;
+}
+td.tipodois{
+	padding:10px;
+	padding-top:1px;
+}
+td.paddingdez{
+	padding:10px;
+}
+span.voltar{
+	background-color:#E8E8E8;
+	border:solid 1px gray;
+	font-weight:bolder;
+	color:black;
+	padding:5px;
+	cursor:pointer;
+	padding-left:10px;
+	padding-right:10px;
+}
+a.avoltar{
+	text-decoration:none;
+}
+.corvermelha{
+	color:red;
+}
+table.lista{
+	border-collapse:collapse;
+	border:solid 1px gray;
+}
+td.tituloPrincipal{
+	background-color:LightGoldenRodYellow;
+	padding:10px;
+	border:solid 1px gray;
+	font-weight:bolder;
+}
+td.botoes{
+	padding:10px;
+	background-color:white;
+}
+span.botaoNovo{
+	background-color:blue;
+	font-weight:bolder;
+	color:white;
+	padding:5px;
+	cursor:pointer;
+	border:solid 1px DarkBlue;
+	padding-left:10px;
+	padding-right:10px;
+	margin:1px;
+}
