@@ -27,7 +27,7 @@ require_once 'Partes iguais/menu.php';
 		</tr> 
 		<tr>
 			<td style = "padding:5px;" class = "corvermelha" >
-				Para editar ou exluir um registro clique na linha da tabela do registro correspondente.
+				Para editar ou excluir um registro clique na linha da tabela do registro correspondente.
 			</td>
 		</tr>
 		<tr>
@@ -110,8 +110,6 @@ require_once 'Partes iguais/menu.php';
 					echo "</tr>";
 						}
 					}
-
-					mysqli_close($conn);
 
 					?>
 				</table>

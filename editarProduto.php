@@ -82,8 +82,6 @@ if (mysqli_query($conn, $sql)) {
 	echo "Não foi possível editar o produto\n";
 }
 
-mysqli_close($conn);
- 
 }
 
 }

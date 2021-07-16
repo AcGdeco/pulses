@@ -5,7 +5,6 @@ $username = "root";
 $password = "";
 $dbname = "teste";
 
-
 //on line
 /* $servername = "localhost";
 $username = "id13475753_controlefinanceirousuario";

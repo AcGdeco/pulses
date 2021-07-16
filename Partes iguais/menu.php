@@ -10,6 +10,8 @@ span#menu{
   <ul class="menu">
   		<li><a href="index.php" style = "font-size:14px;font-weight:bolder;" >HOME</a></li>
 		<li><a href="produtos.php" style = "font-size:14px;font-weight:bolder;" >MODIFICAR ESTOQUE</a></li>
+		<li><a href="darbaixa.php" style = "font-size:14px;font-weight:bolder;" >DAR BAIXA</a></li>
+		<li><a href="relatorio.php" style = "font-size:14px;font-weight:bolder;" >RELATÓRIOS</a></li>
 </ul>
 </nav>
 </div>
