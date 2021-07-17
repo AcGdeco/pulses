@@ -11,7 +11,7 @@ require_once 'Partes iguais/menu.php';
   <table class = "novo" >
     <tr>
       <td class = "titulo" colspan = "3" >
-        &equiv; Dar Baixa
+        &equiv; Adicionar Qtd. / Dar Baixa
       </td>
     </tr>
     <tr>
@@ -24,8 +24,9 @@ require_once 'Partes iguais/menu.php';
         NOME / SKU / QTD. ESTOQUE<span class = "corvermelha" >*</span>
       </td>
       <td class = "tipoum" >
-        QUANTIDADE A SER RETIRADA
-        <span class = "corvermelha" >*</span>
+        QUANTIDADE
+        <span class = "corvermelha" >*</span><br>
+        <span style = "font-size:12px" >Valores negativos irão retirar, positivos incrementar</span>
       </td>
     </tr>
     <tr>

@@ -92,6 +92,21 @@ if (mysqli_query($conn, $sql)) {
      echo "Error: " . $sql . "<br>" . $conn->error."\n";
 	echo "Não foi possível cadastrar o produto\n";
 }
+
+$sql = "INSERT INTO estoque (nome, sku, quantidade)
+
+VALUES ('$nome', '$sku', '$qtd')";
+
+
+
+if (mysqli_query($conn, $sql)) {
+
+  //echo "Produto Cadastrado\n";
+
+} else {
+     echo "Error: " . $sql . "<br>" . $conn->error."\n";
+	//echo "Não foi possível cadastrar o produto\n";
+}
  
 }
 

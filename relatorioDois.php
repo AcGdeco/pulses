@@ -30,7 +30,14 @@ require_once 'Partes iguais/menu.php';
     // Create connection
     $conn = mysqli_connect($servername, $username, $password, $dbname);
 
-    $sql = "SELECT id, nome, sku, quantidade, data FROM estoque ORDER BY id ASC";
+    $sql = "SELECT 
+
+    *
+
+    FROM produtos a
+    
+    INNER JOIN baixas b
+    ON a.id = b.idProduto";
 
     $result = mysqli_query($conn, $sql);
 
@@ -42,9 +49,9 @@ require_once 'Partes iguais/menu.php';
         echo "<td style = 'border:solid 1px gray;padding:5px;width:200px;' >".$row["nome"]."</td>";
         echo "<td style = 'border:solid 1px gray;padding:5px;width:200px;' >".$row["sku"]."</td>";
         if($row["quantidade"] < 100){
-            echo "<td style = 'border:solid 1px gray;padding:5px;width:135px;color:red;' >".$row["quantidade"]."</td>";
+            echo "<td style = 'border:solid 1px gray;padding:5px;width:135px;color:red;' >".$row["quantidadeRetirada"]."</td>";
         }else{
-            echo "<td style = 'border:solid 1px gray;padding:5px;width:135px;' >".$row["quantidade"]."</td>";
+            echo "<td style = 'border:solid 1px gray;padding:5px;width:135px;' >".$row["quantidadeRetirada"]."</td>";
         }
         $data = date('d/m/Y', strtotime($row["data"]));
         echo "<td style = 'border:solid 1px gray;padding:5px;width:135px;' >".$data."</td>";

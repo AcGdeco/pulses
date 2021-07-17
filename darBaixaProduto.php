@@ -50,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $Erro = 1;
         echo  "A quantidade para dar baixa é maior do que a contida no estoque\n";
     }else{
-        $qtd = $qtdBD - $qtd;
+        $qtd = $qtdBD + $qtd;
     }
 
   }

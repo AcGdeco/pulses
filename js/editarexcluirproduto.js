@@ -9,7 +9,7 @@ function PararCarregando(){
 function Editar(){
 	document.getElementById('nome').disabled = false;
 	document.getElementById('sku').disabled = false;
-	document.getElementById('qtd').disabled = false;
+	//document.getElementById('qtd').disabled = false;
 	document.getElementById('salvar').style.display = 'inline';
 }
 

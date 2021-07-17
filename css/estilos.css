@@ -249,3 +249,30 @@ span.botaoNovo{
 	padding-right:10px;
 	margin:1px;
 }
+table.loginCadastro{
+    border-collapse:collapse;
+    border:solid 1px green;
+    box-shadow: 5px 5px 5px black;
+}
+th.loginCadastro{
+    background-color: green;
+    color:white;
+    font-weight: bolder;
+    padding:10px;
+    font-size:18px;
+}
+td.loginCadastro{
+    padding:10px;
+    border-right:solid 1px green;
+}
+span.loginCadastro{
+    background-color: green;
+    color:white;
+    font-weight: bolder;
+    padding:3px;
+    border:solid 1px black;
+}
+span.loginCadastro:hover{
+    cursor:pointer;
+    opacity:0.5;
+}
